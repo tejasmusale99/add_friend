@@ -5,4 +5,10 @@ const addedConfirmation = document.querySelector('#msgConfirm')
 
 addFriend.addEventListener("click", function() {
     addedConfirmation.innerHTML = "Friends";
+    addedConfirmation.style.color = "green"
   });
+
+  removeFriend.addEventListener('click',function(){
+    addedConfirmation.innerHTML = "Stranger"
+    addedConfirmation.style.color = "red"
+  })
